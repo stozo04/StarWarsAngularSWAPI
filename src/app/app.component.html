@@ -1,0 +1,18 @@
+
+<div class="body">
+<mat-toolbar color="primary">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="./dashboard">Home</button>
+        <button mat-menu-item routerLink="./characters">Characters</button>
+        <button mat-menu-item routerLink="./planets">Planets</button>
+        <button mat-menu-item routerLink="./vehicles">Star Ships</button>
+    </mat-menu>
+    <span>Everything You Need To Know About Star Wars</span>
+    <span class="example-spacer"></span>
+    <p>Steven Gates Is Awesome!</p>
+</mat-toolbar>
+<router-outlet></router-outlet>
+</div>

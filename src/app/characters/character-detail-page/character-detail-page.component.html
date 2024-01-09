@@ -1,0 +1,45 @@
+
+<mat-spinner *ngIf="isLoadingResults" class="centered"></mat-spinner>
+<div *ngIf="!isLoadingResults">
+
+    <mat-card class="container">
+        <mat-card-title-group>
+            <mat-card-title>{{character.name}}</mat-card-title>
+        </mat-card-title-group>
+        <mat-card-content>
+            <mat-divider></mat-divider>
+            <div  class="padding">
+                <p><strong>Height:</strong> {{character.height}}</p>
+                <p><strong>Mass:</strong> {{character.mass}}</p>
+                <p><strong>Hair Color:</strong> {{character.hair_color}}</p>
+                <p><strong>Eye Color:</strong> {{character.eye_color}}</p>
+                <p><strong>Skin Color:</strong> {{character.skin_color}}</p>
+                <p><strong>Gender:</strong> {{character.gender}}</p>
+                <p><strong>Home World:</strong> {{ planet.name }}</p>
+            </div>
+        </mat-card-content>
+    </mat-card>      
+    
+    <mat-card class="container">
+        <mat-card-title-group>
+            <mat-card-title>Home World</mat-card-title>
+        </mat-card-title-group>
+        <mat-card-content>
+            <mat-divider></mat-divider>
+            <div  class="padding">
+                <p><strong>Name:</strong> {{planet.name}}</p>
+                <p><strong>Climate:</strong> {{planet.climate}}</p>
+                <p><strong>Created:</strong> {{planet.created}}</p>
+                <p><strong>Diameter:</strong> {{planet.diameter}}</p>
+                <p><strong>Edited:</strong> {{planet.edited}}</p>
+                <p><strong>Orbital Period:</strong> {{planet.orbital_period}}</p>
+                <p><strong>Rotation Period:</strong> {{planet.rotation_period}}</p>
+                <p><strong>Surface Water:</strong> {{planet.surface_water}}</p>
+                <p><strong>Terrain:</strong> {{planet.terrain}}</p>
+            </div>
+        </mat-card-content>
+    </mat-card> 
+    <div class="btnControls">
+        <button mat-raised-button color="primary" routerLink="/characters">Back</button>  
+    </div>  
+</div>    

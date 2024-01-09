@@ -1,0 +1,26 @@
+
+<mat-spinner *ngIf="isLoadingResults" class="centered"></mat-spinner>
+<div *ngIf="!isLoadingResults">
+
+    <mat-card class="container">
+        <mat-card-title-group>
+            <mat-card-title>{{starShip.name}}</mat-card-title>
+        </mat-card-title-group>
+        <mat-card-content>
+            <mat-divider></mat-divider>
+            <div  class="padding">
+                <p><strong>Cargo Capacity:</strong> {{starShip.cargo_capacity}}</p>
+                <p><strong>Consumables:</strong> {{starShip.consumables}}</p>
+                <p><strong>Cost In Credits:</strong> {{starShip.cost_in_credits}}</p>
+                <p><strong>Crew:</strong> {{starShip.crew}}</p>
+                <p><strong>Passengers:</strong> {{starShip.passengers}}</p>
+                <p><strong>Starship Class:</strong> {{starShip.starship_class}}</p>
+                <p><strong>Hyperdrive Rating:</strong> {{ starShip.hyperdrive_rating }}</p>
+            </div>
+        </mat-card-content>
+    </mat-card>      
+    
+    <div class="btnControls">
+        <button mat-raised-button color="primary" routerLink="/vehicles">Back</button>  
+    </div>  
+</div>    

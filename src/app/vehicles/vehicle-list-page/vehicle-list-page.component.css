@@ -1,0 +1,37 @@
+/* Structure */
+.example-container {
+  position: relative;
+  min-height: 200px;
+}
+
+.table-container {
+  padding-top: 20px;
+  position: relative;
+  max-height: 400px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}
+  
+/* Column Widths */
+.mat-column-number,
+.mat-column-state {
+  max-width: 64px;
+}
+
+.mat-column-created {
+  max-width: 124px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.filter {
+  background-color: white; 
+  margin-top:25px;
+}

@@ -1,0 +1,17 @@
+
+
+  .example-card {
+    max-width: 90%;
+    margin-top: 20PX;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+  }
+
+  .box {
+    display: flex;
+  }
+
+  .container {
+    flex: 1 1 auto;
+  }

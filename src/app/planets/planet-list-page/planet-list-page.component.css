@@ -1,0 +1,10 @@
+.container {
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: lightgray;
+  }
+  
+  .padding {
+    padding-top: 20px;
+  }
